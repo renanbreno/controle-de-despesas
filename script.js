@@ -91,10 +91,9 @@ const handleFormSubmit = event => {
         : `-${inputTransactionAmount.value.trim()}`;
 
     addToTransactionArray(transactionName, transactionAmount);
-
-
     init();
     updateLocalStorage();
+    cleanInputs();
 }
 
 form.addEventListener('submit', handleFormSubmit);
